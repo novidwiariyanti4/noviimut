@@ -1,0 +1,68 @@
+ /* Live Demo Code: navbar.css */
+ /* Reset Global Modern */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin:0; 
+  padding:0;
+}
+
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  color: #dfe0e1;
+  background-color: #456f99;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #171212;
+  border-bottom: 1px solid #1a2b42;
+}
+
+.nav-links {
+     display: flex;
+  list-style: none;
+  gap: 1.5rem;
+
+}
+ 
+.nav-links a {
+  text-decoration: none;
+  color: #475569;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+  color: #2563eb;
+}
+
+/* 3. Pengaturan CSS Grid dengan auto-fit untuk 4 kartu artikel */
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 20px 0;
+}
+
+/* 4. Styling kotak kartu */
+.card {
+  background-color: #c8c1c1;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e2e8f0;
+}
+
+/* 5. Footer dengan Flexbox */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1e293b;
+  color: white;
+  padding: 20px;
+  margin-top: 40px;
+}
